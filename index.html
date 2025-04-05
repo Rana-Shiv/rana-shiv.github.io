@@ -12,13 +12,35 @@
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background: linear-gradient(to right, #f0f4f8, #d9e2ec);
+      min-height: 100vh;
+      text-align: center;
+      padding: 2rem;
+      position: relative;
+    }
+    .top-menu {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+    }
+    .top-menu a {
+      text-decoration: none;
+      margin-left: 1rem;
+      padding: 0.5rem 1rem;
+      background-color: #0077b6;
+      color: white;
+      border-radius: 6px;
+      font-weight: 500;
+      transition: background-color 0.3s ease;
+    }
+    .top-menu a:hover {
+      background-color: #005f8e;
+    }
+    .content {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      min-height: 100vh;
-      text-align: center;
-      padding: 2rem;
+      margin-top: 80px;
     }
     .logo {
       font-size: 3rem;
@@ -48,10 +70,18 @@
   </style>
 </head>
 <body>
-  <div class="logo">Shiv BI</div>
-  <img src="https://cdn-icons-png.flaticon.com/512/3832/3832703.png" alt="Ícone construção inteligente">
-  <h1>Estamos construindo algo inteligente e transformador.</h1>
-  <p>Em breve você vai conhecer uma nova maneira de ver os dados e tomar decisões com confiança. Fique de olho!</p>
+  <div class="top-menu">
+    <a href="manifesto.html">Manifesto</a>
+    <a href="sobre.html">Sobre</a>
+  </div>
+
+  <div class="content">
+    <div class="logo">Shiv BI</div>
+    <img src="https://cdn-icons-png.flaticon.com/512/3832/3832703.png" alt="Ícone construção inteligente">
+    <h1>Estamos construindo algo inteligente e transformador.</h1>
+    <p>Em breve você vai conhecer uma nova maneira de ver os dados e tomar decisões com confiança. Fique de olho!</p>
+  </div>
+
   <footer>&copy; 2025 Shiv BI. Todos os direitos reservados.</footer>
 </body>
 </html>

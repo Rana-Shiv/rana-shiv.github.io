@@ -3,55 +3,96 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Shiv BI | Em construção</title>
+  <title>Shiv BI - Em construção</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    * {
-      box-sizing: border-box;
-    }
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(to right, #f0f4f8, #d9e2ec);
+      font-family: 'Space Grotesk', sans-serif;
+      background: linear-gradient(to right, #edf2f7, #dbe7f0);
+      color: #1a1a1a;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2rem 2rem 1rem;
+    }
+
+    .logo {
+      font-size: 2.5rem;
+      font-weight: 600;
+      color: #0077b6;
+    }
+
+    .nav-link {
+      font-size: 1rem;
+      text-decoration: none;
+      color: #0077b6;
+      border: 2px solid #0077b6;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-link:hover {
+      background-color: #0077b6;
+      color: white;
+    }
+
+    .main {
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      min-height: 100vh;
       text-align: center;
-      padding: 2rem;
+      padding: 4rem 2rem;
     }
-    .logo {
-      font-size: 3rem;
-      font-weight: bold;
-      color: #0077b6;
-      margin-bottom: 1rem;
-    }
-    h1 {
+
+    .slogan {
       font-size: 2rem;
-      color: #333;
-      margin: 1rem 0;
+      font-weight: 600;
+      margin-bottom: 2rem;
+      color: #003049;
     }
-    p {
-      font-size: 1.1rem;
-      color: #555;
-      max-width: 600px;
-    }
-    img {
-      max-width: 300px;
+
+    .image-container {
       margin: 2rem 0;
     }
+
+    .image-container img {
+      width: 100%;
+      max-width: 400px;
+      opacity: 0.95;
+    }
+
     footer {
-      margin-top: 4rem;
+      text-align: center;
+      padding: 2rem 1rem;
       font-size: 0.9rem;
-      color: #777;
+      color: #666;
     }
   </style>
 </head>
 <body>
-  <div class="logo">Shiv BI</div>
-  <img src="https://cdn-icons-png.flaticon.com/512/3832/3832703.png" alt="Ícone construção inteligente">
-  <h1>Estamos construindo algo inteligente e transformador.</h1>
-  <p>Em breve você vai conhecer uma nova maneira de ver os dados e tomar decisões com confiança. Fique de olho!</p>
-  <footer>&copy; 2025 Shiv BI. Todos os direitos reservados.</footer>
+
+  <header>
+    <div class="logo">Shiv BI</div>
+    <a href="manifesto.html" class="nav-link">Manifesto</a>
+  </header>
+
+  <main class="main">
+    <div class="slogan">Decisões inteligentes começam aqui.</div>
+
+    <div class="image-container">
+      <img src="https://cdn-icons-png.flaticon.com/512/1042/1042266.png" alt="Peças de quebra-cabeça">
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Shiv BI. Todos os direitos reservados.
+  </footer>
+
 </body>
 </html>

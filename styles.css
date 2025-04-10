@@ -86,3 +86,49 @@ footer {
   color: #cccccc;
   background-color: #000c1a;
 }
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  .nav a {
+    width: 100%;
+    text-align: center;
+  }
+
+  .content h1 {
+    font-size: 1.6rem;
+  }
+
+  .content p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .content img {
+    max-width: 100%;
+  }
+
+  .logo img {
+    height: 40px;
+  }
+
+  header {
+    padding: 1.5rem;
+  }
+
+  .content {
+    margin-top: 40px;
+  }
+}
+

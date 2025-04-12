@@ -23,6 +23,7 @@ header {
   height: 50px;
 }
 
+/* Navegação */
 .nav {
   display: flex;
   gap: 1rem;
@@ -57,6 +58,13 @@ header {
   flex: 1;
 }
 
+.content img {
+  max-width: 90%;
+  height: auto;
+  margin-bottom: 2rem;
+}
+
+/* Textos principais */
 h1 {
   font-size: 2rem;
   margin-bottom: 2rem;
@@ -70,6 +78,7 @@ p {
   color: #c6e0f5;
 }
 
+/* Rodapé */
 footer {
   text-align: center;
   padding: 2rem 1rem;
@@ -78,12 +87,12 @@ footer {
   background-color: #000c1a;
 }
 
-/* Responsivo */
 @media (max-width: 768px) {
   .nav {
+    display: flex;
     justify-content: flex-end;
     gap: 0.5rem;
-    position: static;
+    position: static; /* Remove o menu flutuante mobile anterior */
     width: auto;
     background-color: transparent;
     box-shadow: none;
@@ -97,6 +106,7 @@ footer {
     border: 1px solid #ffffff66;
     border-radius: 6px;
     background-color: transparent;
+    width: auto; /* Garante que só ocupe o necessário */
   }
 
   .nav a:hover {
@@ -104,7 +114,24 @@ footer {
   }
 }
 
-/* Animação */
+@media (max-width: 480px) {
+  .content img {
+    max-width: 100%;
+  }
+
+  .logo img {
+    height: 40px;
+  }
+
+  header {
+    padding: 1.5rem;
+  }
+
+  .content {
+    margin-top: 40px;
+  }
+}
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -121,7 +148,6 @@ footer {
   opacity: 0;
 }
 
-/* Planos */
 .plans-container {
   display: flex;
   justify-content: center;
@@ -136,11 +162,7 @@ footer {
   border-radius: 12px;
   padding: 2rem;
   width: 280px;
-  text-align: left;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -184,39 +206,22 @@ footer {
 
 /* Vantagens */
 .advantages {
-  background-color: #00152a;
-  padding: 4rem 2rem;
-  text-align: center;
+  margin-top: 3rem;
 }
 
 .advantages h2 {
-  font-size: 2rem;
-  margin-bottom: 2rem;
+  font-size: 1.8rem;
   color: #ffffff;
-}
-
-.advantage-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-}
-
-.advantage-item {
-  background-color: #00264d;
-  border-radius: 12px;
-  padding: 2rem;
-  width: 280px;
-  color: #c6e0f5;
-  transition: transform 0.3s ease;
-}
-
-.advantage-item:hover {
-  transform: translateY(-5px);
-}
-
-.emoji {
-  font-size: 2rem;
-  display: block;
   margin-bottom: 1rem;
+}
+
+.advantages ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.advantages li {
+  font-size: 1.2rem;
+  color: #c6e0f5;
+  margin-bottom: 0.8rem;
 }

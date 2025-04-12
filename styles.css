@@ -87,12 +87,12 @@ footer {
   background-color: #000c1a;
 }
 
+/* Responsivo */
 @media (max-width: 768px) {
   .nav {
-    display: flex;
     justify-content: flex-end;
     gap: 0.5rem;
-    position: static; /* Remove o menu flutuante mobile anterior */
+    position: static;
     width: auto;
     background-color: transparent;
     box-shadow: none;
@@ -106,14 +106,12 @@ footer {
     border: 1px solid #ffffff66;
     border-radius: 6px;
     background-color: transparent;
-    width: auto; /* Garante que só ocupe o necessário */
   }
 
   .nav a:hover {
     background-color: #ffffff22;
   }
 }
-
 
 @media (max-width: 480px) {
   .content img {
@@ -132,6 +130,8 @@ footer {
     margin-top: 40px;
   }
 }
+
+/* Animação */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -147,6 +147,8 @@ footer {
   animation: fadeInUp 1s ease-out forwards;
   opacity: 0;
 }
+
+/* Planos */
 .plans-container {
   display: flex;
   justify-content: center;
@@ -182,48 +184,41 @@ footer {
   margin-bottom: 0.5rem;
 }
 
-.benefits {
-  padding: 4rem 1rem;
+/* Vantagens */
+.advantages {
+  background-color: #00152a;
+  padding: 4rem 2rem;
   text-align: center;
-  background-color: #001329;
 }
 
-.benefits h2 {
+.advantages h2 {
   font-size: 2rem;
+  margin-bottom: 2rem;
   color: #ffffff;
-  margin-bottom: 3rem;
 }
 
-.benefits-grid {
+.advantage-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
   justify-content: center;
+  gap: 2rem;
 }
 
-.benefit-card {
-  background-color: #001f3f;
-  border: 1px solid #ffffff33;
+.advantage-item {
+  background-color: #00264d;
   border-radius: 12px;
   padding: 2rem;
-  width: 260px;
-  text-align: center;
+  width: 280px;
+  color: #c6e0f5;
+  transition: transform 0.3s ease;
 }
 
-.benefit-card img {
-  width: 48px;
-  height: 48px;
+.advantage-item:hover {
+  transform: translateY(-5px);
+}
+
+.emoji {
+  font-size: 2rem;
+  display: block;
   margin-bottom: 1rem;
 }
-
-.benefit-card h3 {
-  font-size: 1.2rem;
-  color: #ffffff;
-  margin-bottom: 0.5rem;
-}
-
-.benefit-card p {
-  font-size: 1rem;
-  color: #c6e0f5;
-}
-

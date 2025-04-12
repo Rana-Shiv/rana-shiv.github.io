@@ -8,28 +8,42 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  
 </head>
+
 <body>
 
+  <!-- Cabeçalho com logo e menu hambúrguer -->
   <header>
     <div class="logo">
       <img src="shiv-logo-azulebranco.jpg" alt="Shiv BI Logo">
     </div>
-    <div class="nav">
+
+    <!-- Checkbox invisível para controlar a exibição do menu -->
+    <input type="checkbox" id="menu-toggle" />
+    
+    <!-- Ícone do menu (hambúrguer) visível em telas pequenas -->
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+    <!-- Navegação principal -->
+    <nav class="nav">
       <a href="index.html">Início</a>
       <a href="blog.html">Blog / Insights</a>
       <a href="sobre.html">Sobre</a>
-    </div>
+    </nav>
   </header>
 
+  <!-- Conteúdo principal da página -->
   <div class="content">
     <h1 class="fade-in-up">Estamos construindo algo inteligente e transformador.</h1>
+    
     <img src="shiv-construtor.jpg" alt="Imagem ilustrativa de construção inteligente">
+    
     <p>Estamos criando uma nova forma de pensar e agir sobre os dados. Na Shiv BI, acreditamos que a inteligência está na essência da transformação — e que cada padrão oculto revela uma nova possibilidade de ação. Nosso compromisso é com a clareza, a autonomia e o impacto.</p>
+    
     <p>Em breve você vai conhecer uma nova maneira de ver dados e tomar decisões com confiança. Fique de olho!</p> 
   </div>
 
+  <!-- Rodapé -->
   <footer>
     &copy; 2025 Shiv BI. Todos os direitos reservados.
   </footer>

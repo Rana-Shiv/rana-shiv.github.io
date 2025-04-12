@@ -141,6 +141,45 @@ footer {
     transform: translateY(0);
   }
 }
+/* Menu hambúrguer responsivo */
+.menu-icon {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+    align-self: flex-end;
+    margin-top: -2.5rem;
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  #menu-toggle:checked + .menu-icon + .nav {
+    display: flex;
+  }
+
+  .nav a {
+    width: 100%;
+    text-align: center;
+  }
+}
+
 
 .fade-in-up {
   animation: fadeInUp 1s ease-out forwards;

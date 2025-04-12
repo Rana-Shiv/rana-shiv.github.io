@@ -23,7 +23,6 @@ header {
   height: 50px;
 }
 
-/* Navegação */
 .nav {
   display: flex;
   gap: 1rem;
@@ -58,13 +57,6 @@ header {
   flex: 1;
 }
 
-.content img {
-  max-width: 90%;
-  height: auto;
-  margin-bottom: 2rem;
-}
-
-/* Textos principais */
 h1 {
   font-size: 2rem;
   margin-bottom: 2rem;
@@ -78,7 +70,6 @@ p {
   color: #c6e0f5;
 }
 
-/* Rodapé */
 footer {
   text-align: center;
   padding: 2rem 1rem;
@@ -110,24 +101,6 @@ footer {
 
   .nav a:hover {
     background-color: #ffffff22;
-  }
-}
-
-@media (max-width: 480px) {
-  .content img {
-    max-width: 100%;
-  }
-
-  .logo img {
-    height: 40px;
-  }
-
-  header {
-    padding: 1.5rem;
-  }
-
-  .content {
-    margin-top: 40px;
   }
 }
 
@@ -163,7 +136,11 @@ footer {
   border-radius: 12px;
   padding: 2rem;
   width: 280px;
-  text-align: center;
+  text-align: left;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -182,6 +159,27 @@ footer {
   font-size: 1rem;
   color: #c6e0f5;
   margin-bottom: 0.5rem;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+
+.subscribe-btn {
+  background-color: #ffffff;
+  color: #001F3F;
+  text-decoration: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.subscribe-btn:hover {
+  background-color: #c6e0f5;
+  transform: scale(1.05);
 }
 
 /* Vantagens */

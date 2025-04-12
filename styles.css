@@ -119,11 +119,13 @@ footer {
 
 /* Menu hambúrguer responsivo */
 .menu-icon {
-  display: none;
+  display: block;
   font-size: 2rem;
   cursor: pointer;
   color: #ffffff;
   padding: 0.5rem 1rem;
+  align-self: flex-end;
+  margin-top: -2.5rem;
 }
 
 /* Checkbox invisível que controla o menu mobile */
@@ -140,12 +142,12 @@ footer {
   border: none;
   background-color: transparent;
   color: #ffffff;
-  border-bottom: 1px solid #ffffff33; /* A linha de divisão com um pouco de transparência */
+  border-bottom: 1px solid #ffffff33; /* Linha de divisão com um pouco de transparência */
 }
 
-/* Alteração para melhorar a visibilidade das linhas de divisão */
+/* Melhorando a visibilidade das linhas de divisão */
 .nav a:not(:last-child) {
-  border-bottom: 2px solid #ffffff; /* Agora as linhas têm 2px e são mais visíveis */
+  border-bottom: 2px solid #ffffff; /* Linha de divisão mais visível */
 }
 
 .nav a:hover {
@@ -155,10 +157,9 @@ footer {
 
 /* Responsivo: tablets e celulares */
 @media (max-width: 768px) {
+  /* Menu hambúrguer */
   .menu-icon {
     display: block;
-    align-self: flex-end;
-    margin-top: -2.5rem;
   }
 
   .nav {
@@ -178,15 +179,6 @@ footer {
 
   #menu-toggle:checked + .menu-icon + .nav {
     display: flex;
-  }
-
-  /* Substituindo o ícone do hambúrguer por um X quando aberto */
-  #menu-toggle:not(:checked) + .menu-icon:before {
-    content: '\2630'; /* Símbolo do hambúrguer (☰) */
-  }
-
-  #menu-toggle:checked + .menu-icon:before {
-    content: '\00d7'; /* Símbolo de X (✖) */
   }
 
   .nav a {

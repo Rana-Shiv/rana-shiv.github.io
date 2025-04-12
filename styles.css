@@ -113,6 +113,11 @@ footer {
   }
 }
 
+.fade-in-up {
+  animation: fadeInUp 1s ease-out;
+}
+
+
 /* Responsivo: tablets e celulares */
 @media (max-width: 768px) {
   .menu-icon {
